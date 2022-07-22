@@ -9,7 +9,8 @@ const Text = ({
     fontSize,
     letterSpacing,
     fontWeight,
-    textAlign
+    textAlign,
+    fontFamily
 }) => {
   return (
     <TextDefault
@@ -20,6 +21,7 @@ const Text = ({
         letterSpacing={letterSpacing}
         fontWeight={fontWeight}
         textAlign={textAlign}
+        fontFamily={fontFamily}
     >
       {children}
     </TextDefault>

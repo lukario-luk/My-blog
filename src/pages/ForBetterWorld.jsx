@@ -4,6 +4,7 @@ import {ContainerDefault} from '../Components/Container'
 import {SectionDefault} from '../Components/Section'
 import {ContentDefault} from '../Components/Content'
 import { ImgDefault } from '../Components/Img/styles'
+import { CiteDefault } from '../Components/Cite'
 import iconODS1 from "../assets/ODSs-cards/icon-ODS1.png"
 import iconODS2 from "../assets/ODSs-cards/icon-ODS2.png"
 import iconODS4 from "../assets/ODSs-cards/icon-ODS4.png"
@@ -25,11 +26,11 @@ export default function ForBetterWorld() {
     {id:9,img:ODS9}
   ]
   const listODSInfoCardsModal=[
-    {id:1,icon:iconODS1, Color:"#e5243b", NameODS:"Erradicação da pobreza", objectiveODS:"Erradicar a pobreza em todas as formas e em todos os lugares", solutionODS:"",},
-    {id:2,icon:iconODS2, Color:"#dda63a", NameODS:"Fome zero e agricultura sustentável", objectiveODS:"Erradicar a fome, alcançar a segurança alimentar, melhorar a nutrição e promover a agricultura sustentável", mySolutionODS:"",},
-    {id:4,icon:iconODS4, Color:"#c5192d", NameODS:"Educação de qualidade", objectiveODS:"Garantir o acesso à educação inclusiva, de qualidade e equitativa, e promover oportunidades de aprendizagem ao longo da vida para todos", mySolutionODS:"",},
-    {id:8,icon:iconODS8, Color:"#a21942", NameODS:"Trabalho decente e crescimento econômico", objectiveODS:"Promover o crescimento econômico inclusivo e sustentável, o emprego pleno e produtivo e o trabalho digno para todos", mySolutionODS:"",},
-    {id:9,icon:iconODS9, Color:"#fd6925", NameODS:"Indústria, inovação e infraestrutura", objectiveODS:"Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação", mySolutionODS:"",}
+    {id:1,icon:iconODS1, Color:"#e5243b", NameODS:"Erradicação da pobreza", objectiveODS:"Erradicar a pobreza em todas as formas e em todos os lugares", solutionODS:"Podemos devolver a dignidade as pessoas em situação de rua. No meu bairro já existem pessoas e igrejas com iniciativa  de juntar para doar roupas, alimentos, itens de higiene pessoal, porem essas iniciativas isoladas, com uma ação conjunta e bem organizada teria-se mais condições de ajudar aqueles que precisão.",},
+    {id:2,icon:iconODS2, Color:"#dda63a", NameODS:"Fome zero e agricultura sustentável", objectiveODS:"Erradicar a fome, alcançar a segurança alimentar, melhorar a nutrição e promover a agricultura sustentável", mySolutionODS:"Comunicação é essencial para algo dar certo, em minhas conversas com os meus vizinhos vejo que muitos tem a vontade de fazer uma horta sustentável local, mas nunca ouve iniciativa por motivos de desunião. ",},
+    {id:4,icon:iconODS4, Color:"#c5192d", NameODS:"Educação de qualidade", objectiveODS:"Garantir o acesso à educação inclusiva, de qualidade e equitativa, e promover oportunidades de aprendizagem ao longo da vida para todos", mySolutionODS:"Divulgar cursos no Cais e nos comercios locais.",},
+    {id:8,icon:iconODS8, Color:"#a21942", NameODS:"Trabalho decente e crescimento econômico", objectiveODS:"Promover o crescimento econômico inclusivo e sustentável, o emprego pleno e produtivo e o trabalho digno para todos", mySolutionODS:"Conectar as ortas organicas locais ao comercio local.",},
+    {id:9,icon:iconODS9, Color:"#fd6925", NameODS:"Indústria, inovação e infraestrutura", objectiveODS:"Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação", mySolutionODS:"Criar uma campanha de divulgação dos projetos de universidades como politica publica.",}
   ]
   const MapODSCards = () =>{
     return(listODSCards.map(item =>(
@@ -63,7 +64,12 @@ export default function ForBetterWorld() {
                 flexDirection={'column'}
                 justifyContent={'center'}
               >
-                <Text fontSize={'3vh'} color={'#2b2c28'} fontWeight={'600'}>Objetivo 2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável</Text>
+                <Text 
+                  fontSize={'3vh'} 
+                  color={'#2b2c28'} 
+                  fontWeight={'600'}
+                >
+                   O que meu bairro pode fazer nesse objetivo?</Text>
                 <Text margin={'2% 0'} fontSize={'2.5vh'} color={'#2b2c28'} fontWeight={'400'} >{item.mySolutionODS}</Text>
               </ContentDefault>
             </ContainerDefault>
@@ -73,11 +79,13 @@ export default function ForBetterWorld() {
     <>
     <ContainerDefault>
       <SectionDefault width={'100%'} flexDirection={'column'} >
-        <Text fontSize={'3vh'} fontWeight={'600'} color={'#2b2c28'}>Como as Nações Unidas apoiam os Objetivos de Desenvolvimento Sustentável no Brasil</Text>
-        <Text fontSize={'2.5vh'} fontWeight={'400'} color={'#2b2c28'}>A ONU e seus parceiros no Brasil estão trabalhando para atingir os Objetivos de Desenvolvimento Sustentável. São 17 objetivos ambiciosos e interconectados que abordam os principais desafios de desenvolvimento enfrentados por pessoas no Brasil e no mundo.</Text>
-        <Text fontSize={'3vh'} fontWeight={'600'} color={'#2b2c28'}>Os Objetivos de Desenvolvimento Sustentável no Brasil</Text>
-        <Text fontSize={'2.5vh'} fontWeight={'400'} color={'#2b2c28'}>Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.</Text>
-
+        <Text margin={'2% 1%'} fontSize={'6vh'} fontWeight={'600'} color={'#2b2c28'}>Os Objetivos de Desenvolvimento Sustentável no Brasil</Text>
+        <Text margin={'0 1%'} fontSize={'2.5vh'} fontWeight={'400'} color={'#2b2c28'}>Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.</Text>
+        <Text margin={'1% 1%'} fontSize={'2.5vh'} fontWeight={'400'} color={'#2b2c28'}>Todos temos como contribuir com um mundo melhor e tudo começa com uma ideia que se torna um sonho, ao compartilhar podemos dar vida a esses sonhos de um mundo melhor</Text>
+        <CiteDefault width={'70vw'} display={'block'} margin={'1% 1%'} >
+          <Text width={'100%'} fontSize={'3vh'} fontWeight={'400'} color={'#2b2c28'}>"Sonho que se sonha só, é só um sonho que se sonha só, mas sonho que se sonha juntos é realidade. "</Text>
+          <Text margin={'0.2% 0 0.2% 80%'} fontSize={'2.5vh'} fontWeight={'400'} color={'#2b2c28'}>— Raul seixas</Text>
+        </CiteDefault>
       </SectionDefault>
       <SectionDefault flexDirection={"row"}>
 

@@ -31,6 +31,7 @@ export const Header = styled.header`
     background-image:url(${({wallpaper})=>wallpaper});
     background-size:100%;
     background-repeat:no-repeat;
+    z-index:-1;
 `
 export const LogoTitle = styled.h2`
     margin:1.5vw 2vw;

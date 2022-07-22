@@ -4,7 +4,7 @@ export const ContainerDefault = styled.section`
   width:100%;
   padding:${({padding})=>padding};
   display:flex;
-  flex-direction:column;
+  flex-direction:${({flexDirection})=>flexDirection};
   background-image:url(${({backgroundImage})=>backgroundImage});
   overflow:auto;
     &::-webkit-scrollbar {
@@ -22,3 +22,6 @@ export const ContainerDefault = styled.section`
     background-color: #2b2c28; 
     }
 `;
+ContainerDefault.defaultProps ={
+  flexDirection:'column',
+}
