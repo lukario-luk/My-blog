@@ -47,16 +47,16 @@ export default function ForBetterWorld() {
                 borderRadius={'10px'}
                 flexDirection={'column'}
                 justifyContent={'center'}
-                backgroundColor={item.Color} 
+                bgColor={item.Color} 
                 backgroundImage={item.icon} 
                 bgSize={'30%'} 
                 bgRepeat={'no-repeat'} 
                 bgPosition={'90% center'}
               >
-                <Text fontSize={'2.5vh'} fontWeight={'400'} > Objetivo de Desenvolvimento Sustentável</Text>
-                <Text fontSize={'10vh'} fontWeight={'400'} >{item.id}</Text>
-                <Text width={'50%'} fontSize={'6vh'} fontWeight={'600'} >{item.NameODS}</Text>
-                <Text width={'50%'} fontSize={'2.5vh'} fontWeight={'400'} >{item.objectiveODS}</Text>
+                <Text Size={'2.5vh'} Weight={'400'} > Objetivo de Desenvolvimento Sustentável</Text>
+                <Text Size={'10vh'} Weight={'500'} >{item.id}</Text>
+                <Text width={'50%'} Size={'6vh'} Weight={'600'} >{item.NameODS}</Text>
+                <Text width={'50%'} Size={'2.5vh'} Weight={'400'} >{item.objectiveODS}</Text>
               </ContentDefault>
               <ContentDefault
                 width={'100%'}
@@ -65,12 +65,12 @@ export default function ForBetterWorld() {
                 justifyContent={'center'}
               >
                 <Text 
-                  fontSize={'3vh'} 
+                  Size={'3vh'} 
                   color={'#2b2c28'} 
-                  fontWeight={'600'}
+                  Weight={'600'}
                 >
                    O que meu bairro pode fazer nesse objetivo?</Text>
-                <Text margin={'2% 0'} fontSize={'2.5vh'} color={'#2b2c28'} fontWeight={'400'} >{item.mySolutionODS}</Text>
+                <Text margin={'2% 0'} Size={'2.5vh'} color={'#2b2c28'} Weight={'400'} >{item.mySolutionODS}</Text>
               </ContentDefault>
             </ContainerDefault>
     )))
@@ -79,17 +79,19 @@ export default function ForBetterWorld() {
     <>
     <ContainerDefault>
       <SectionDefault width={'100%'} flexDirection={'column'} >
-        <Text margin={'2% 1%'} fontSize={'6vh'} fontWeight={'600'} color={'#2b2c28'}>Os Objetivos de Desenvolvimento Sustentável no Brasil</Text>
-        <Text margin={'0 1%'} fontSize={'2.5vh'} fontWeight={'400'} color={'#2b2c28'}>Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.</Text>
-        <Text margin={'1% 1%'} fontSize={'2.5vh'} fontWeight={'400'} color={'#2b2c28'}>Todos temos como contribuir com um mundo melhor e tudo começa com uma ideia que se torna um sonho, ao compartilhar podemos dar vida a esses sonhos de um mundo melhor</Text>
+        
+      
+        <Text margin={'2% 1%'} Size={'6vh'} Weight={'600'} color={'#2b2c28'}>Os Objetivos de Desenvolvimento Sustentável no Brasil</Text>
+        <Text margin={'0 1%'} Size={'2.5vh'} Weight={'400'} color={'#2b2c28'}>Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.</Text>
+        <Text margin={'1% 1%'} Size={'2.5vh'} Weight={'400'} color={'#2b2c28'}>Todos temos como contribuir com um mundo melhor e tudo começa com uma ideia que se torna um sonho, ao compartilhar podemos dar vida a esses sonhos de um mundo melhor</Text>
         <CiteDefault width={'70vw'} display={'block'} margin={'1% 1%'} >
-          <Text width={'100%'} fontSize={'3vh'} fontWeight={'400'} color={'#2b2c28'}>"Sonho que se sonha só, é só um sonho que se sonha só, mas sonho que se sonha juntos é realidade. "</Text>
-          <Text margin={'0.2% 0 0.2% 80%'} fontSize={'2.5vh'} fontWeight={'400'} color={'#2b2c28'}>— Raul seixas</Text>
+          <Text width={'100%'} Size={'3vh'} Weight={'400'} color={'#2b2c28'}>"Sonho que se sonha só, é só um sonho que se sonha só, mas sonho que se sonha juntos é realidade. "</Text>
+          <Text margin={'0.2% 0 0.2% 80%'} Size={'2.5vh'} Weight={'400'} color={'#2b2c28'}>— Raul seixas</Text>
         </CiteDefault>
       </SectionDefault>
       <SectionDefault flexDirection={"row"}>
 
-        <ContentDefault width={'10.5%'} height={"93vh"} padding={"1vw 0.01vw"} flexDirection={'column'} backgroundColor={"#f2f3fd"} >
+        <ContentDefault width={'10.5%'} height={"93vh"} padding={"1vw 0.01vw"} flexDirection={'column'} bgColor={"#f2f3fd"} >
           {MapODSCards()}
         </ContentDefault>
         <ContentDefault 

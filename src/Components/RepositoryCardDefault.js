@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const ImgDefault = styled.img`
+export const RepositoryCardDefault = styled.div`
   width: ${({ width }) => width};
   height: ${({ height }) => height};
   border: ${({ border }) => border};
   margin: ${({ margin }) => margin};
-  border-radius: ${({ borderRadius }) => borderRadius};
+  border-radius:${({borderRadius})=>borderRadius};
   position:${({position})=>position};
   top:${({top})=>top};
   right:${({right})=>right};

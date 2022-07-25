@@ -5,23 +5,31 @@ const Text = ({
     children,
     width,
     margin,
+    padding,
+    borderRadius,
     color,
-    fontSize,
+    Size,
     letterSpacing,
-    fontWeight,
-    textAlign,
-    fontFamily
+    Weight,
+    Align,
+    Family,
+    Style,
+    bgColor
 }) => {
   return (
     <TextDefault
         width={width}   
         margin={margin}
+        padding={padding}
         color={color}
-        fontSize={fontSize}
+        Size={Size}
         letterSpacing={letterSpacing}
-        fontWeight={fontWeight}
-        textAlign={textAlign}
-        fontFamily={fontFamily}
+        Weight={Weight}
+        Align={Align}
+        Family={Family}
+        Style={Style}
+        bgColor={bgColor}
+        borderRadius={borderRadius}
     >
       {children}
     </TextDefault>

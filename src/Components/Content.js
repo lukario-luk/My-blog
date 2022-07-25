@@ -7,11 +7,12 @@ export const ContentDefault = styled.div`
     padding:${({padding})=>padding};
     display:flex;
     flex-direction:${({flexDirection})=>flexDirection};
+    flex-wrap:wrap;
     justify-content:${({justifyContent})=>justifyContent};
     align-items:${({alignItems})=>alignItems};
     border: ${({ border }) => border};
     border-radius: ${({ borderRadius }) => borderRadius};
-    background-color:${({backgroundColor})=>backgroundColor};
+    background-color:${({bgColor})=>bgColor};
     background-image:url(${({backgroundImage})=>backgroundImage});
     background-size:${({bgSize})=>bgSize};
     background-repeat:${({bgRepeat})=>bgRepeat};

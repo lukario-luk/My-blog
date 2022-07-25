@@ -1,28 +1,42 @@
 import React from "react";
-import { ImgDefault } from "./styled";
+import { ImgDefault } from "./styles";
 
 const Img = ({
-  src,
-  alt,
+  SRC,
+  Alt,
   width,
   height,
   border,
   margin,
   borderRadius,
+  display,
+  position,
+  top,
+  right,
+  bottom,
+  left,
   cursor,
-  backgroundColor,
+  bgColor,
 }) => {
   return (
     <ImgDefault
-      src={src}
-      alt={alt}
+      src={SRC}
+      alt={Alt}
       width={width}
       height={height}
       border={border}
       margin={margin}
       borderRadius={borderRadius}
+      display={display}
+      position={position}
+      top={top}
+      right={right}
+      bottom={bottom}
+      left={left}
       cursor={cursor}
-      backgroundColor={backgroundColor}
+      bgColor={bgColor}
     />
   );
 };
+
+export default Img
