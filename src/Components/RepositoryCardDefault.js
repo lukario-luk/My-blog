@@ -14,4 +14,5 @@ export const RepositoryCardDefault = styled.div`
   cursor: ${({ cursor }) => cursor};
   background-color: ${({ bgColor }) => bgColor};
   z-index:${({ZIx})=>ZIx};
+  overflow:auto;
 `;

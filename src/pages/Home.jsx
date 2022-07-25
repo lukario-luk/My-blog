@@ -5,9 +5,10 @@ import { ContainerDefault } from '../Components/Container';
 import { FiureDefault } from '../Components/Figure';
 import { FigcaptionDefault } from '../Components/Figcaption';
 import { ContentDefault } from '../Components/Content'
+import { RepositoryCardDefault } from '../Components/RepositoryCardDefault';
+import { Anchor } from '../assets/Anchor';
 import Text from '../Components/Text'
 import Img from '../Components/Img'
-import { RepositoryCardDefault } from '../Components/RepositoryCardDefault';
 
 export default function Home() {
   const [Repositorys, setRepositorys]=useState([])
@@ -18,7 +19,7 @@ export default function Home() {
   },[])
   const MapRepository=()=>{
     return Repositorys.map(item=>(
-      <RepositoryCardDefault 
+      <Anchor key={item.id} href={item.html_url}><RepositoryCardDefault 
         width={'25vw'} 
         height={"10vw"}
         borderRadius={"13px"}
@@ -29,18 +30,28 @@ export default function Home() {
           bgColor={"#2b2c28"}
           color={"#fff"}
           Size={"2.4vh"}
-          borderRadius={"13px 13px 0 0"}
+          Text
         >
           {item.name}
         </Text>
+        <Text
+          padding={"3%"}
+          color={"#2b2c28"}
+          Size={"2.4vh"}
+          Text
+        >
+          
+          {item.description}
+        </Text>
+        
         </RepositoryCardDefault>
+        </Anchor>
     ))
   }
   return(
     <>
     <ContainerDefault 
       padding={'1% 0'}
-      zIndex={"3"}
     >
       <FiureDefault
         width={'15vw'}
@@ -67,6 +78,7 @@ export default function Home() {
       </FigcaptionDefault>
       <Text Size={'6vh'} color={'#2b2c28'} Weight={'600'}>Portifolio:</Text>
       <ContentDefault
+        height={"260vh"}
         padding={"1%"}
         justifyContent={"space-around"}
         flexDirection={'row'}

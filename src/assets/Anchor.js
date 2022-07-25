@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TextDefault = styled.h2`
+export const Anchor = styled.a`
   width: ${({ width }) => width};
   padding:${({padding})=>padding};
   border-radius:${({borderRadius})=>borderRadius};
@@ -20,7 +20,7 @@ export const TextDefault = styled.h2`
   text-decoration:${({decoration})=>decoration};
   background-color:${({bgColor})=>bgColor};
 `;
-TextDefault.defaultProps = {
+Anchor.defaultProps = {
     family: "'Roboto', sans-serif",
     color: "#ebf2fa",
     decoration:"none",
